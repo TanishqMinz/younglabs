@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin: [""],
+    origin: ["https://younglabs-frontend.vercel.app/"],
     methods: ["GET", "POST"],
     credentials: true,
 }));
