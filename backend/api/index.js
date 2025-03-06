@@ -4,9 +4,7 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({
-    origin: "https://younglabs-frontend.vercel.app/",
-}));
+app.use(cors())
 
 app.get("/api/greet", (req, res) => {
     const name = req.query.name;
