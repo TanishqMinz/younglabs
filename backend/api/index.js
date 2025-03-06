@@ -6,8 +6,6 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors({
     origin: "https://younglabs-frontend.vercel.app/",
-    methods: ["GET", "POST"],
-    credentials: true,
 }));
 
 app.get("/api/greet", (req, res) => {
