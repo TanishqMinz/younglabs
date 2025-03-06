@@ -18,8 +18,4 @@ app.get("/api/greet", (req, res) => {
     res.json({ message: `Hello, ${name}! Welcome.` });
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-});
-
 export default app;
